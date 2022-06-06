@@ -1,0 +1,28 @@
+
+
+Provider
+ChangeNotifierProvider
+ProxyProvider
+MultiProvider
+
+
+
+A Provider is a container or storage that stores and provides you with state or data.
+
+Consumer 
+Consumer in flutter is an object in the provider library package that obtains 
+Provider<T> from its ancestors and passes its value to builder.
+
+context.watch<T>(), which makes the widget listen to changes on T
+context.read<T>(), which returns T without listening to it
+context.select<T, R>(R cb(T value)), which allows a widget to listen to only a
+ small part of T.
+
+
+ProxyProvider is a provider that combines multiple values from other providers 
+into a new object and sends the result to Provider.
+
+
+A provider that merges multiple providers into a single linear widget tree.
+ It is used to improve readability and reduce boilerplate code of having to 
+ nest multiple layers of providers.
